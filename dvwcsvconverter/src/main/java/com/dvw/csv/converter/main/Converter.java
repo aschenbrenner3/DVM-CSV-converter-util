@@ -12,7 +12,7 @@ public class Converter {
         System.out.println("Hello World!");
 
         // The name of the file to open.
-        String inputFileName = "temp.txt";
+        String inputFileName = "/Users/Shared/Jess/&2017-12-17 37172 NEB-UF(VM).dvw";
 
         // This will reference one line at a time
         String line = null;
@@ -21,7 +21,6 @@ public class Converter {
             // FileReader reads text files in the default encoding.
             FileReader fileReader =
                     new FileReader(inputFileName);
-
 
             BufferedReader bufferedReader =
                     new BufferedReader(fileReader);

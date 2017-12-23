@@ -1,2 +1,2 @@
 # DVW-CSV-converter-util
-Converts .dvm files to .csv files
+Converts .dvw files to .csv files

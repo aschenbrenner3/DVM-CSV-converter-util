@@ -1,5 +1,9 @@
-import java.io.*;
-import org.apache.commons.*;
+package com.dvw.csv.converter.main;
+
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
 
 public class Converter {
 
@@ -38,16 +42,17 @@ public class Converter {
 
 
         }
-
-        final FileWriter sw = new FileWriter("myfile.csv");
-        final CSVPrinter printer = new CSVPrinter(sw, format);
-
-        for (int i = 0; i < nLines; i++) {
-            printer.printRecord(lines[i]);
-        }
-
-        printer.flush();
-        printer.close();
+//
+//        final FileWriter sw = new FileWriter("myfile.csv");
+//        final CSVPrinter printer = new CSVPrinter(sw, format);
+//
+//
+//        for (int i = 0; i < nLines; i++) {
+//            printer.printRecord(lines[i]);
+//        }
+//
+//        printer.flush();
+//        printer.close();
 
         // Store home and away team
 

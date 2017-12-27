@@ -1,13 +1,15 @@
 package com.dvw.csv.converter.model;
 
-public class ConverterModel {
+import java.io.Serializable;
+
+public class Touch implements Serializable {
     private int yearid;
     private int matchid;
     private int team;
     private int teamid;
     private int prgteamid;
     private int ply;
-    private int plyid;
+    private String plyid;
     private int plyprgid;
     private int plyteamprgid;
     private int sk;
@@ -32,7 +34,7 @@ public class ConverterModel {
     private int y2;
     private int x3;
     private int y3;
-    private int hh_mm_ss;
+    private String hh_mm_ss;
     private int game;
     private int hrot;
     private int arot;
@@ -40,51 +42,51 @@ public class ConverterModel {
     private int sec;
     private int undefined2;
     private int harea1;
-    private int harea1id;
+    private String harea1id;
     private int harea1prgid;
     private int harea1teamprgid;
     private int harea2;
-    private int harea2id;
+    private String harea2id;
     private int harea3prgid;
     private int harea2teamprgid;
     private int harea3;
-    private int harea3id;
+    private String harea3id;
     private int harea2prgid;
     private int harea3teamprgid;
     private int harea4;
-    private int harea4id;
+    private String harea4id;
     private int harea4prgid;
     private int harea4teamprgid;
     private int harea5;
-    private int harea5id;
+    private String harea5id;
     private int harea5prgid;
     private int harea5teamprgid;
     private int harea6;
-    private int harea6id;
+    private String harea6id;
     private int harea6prgid;
     private int harea6teamprgid;
     private int aarea1;
-    private int aarea1id;
+    private String aarea1id;
     private int aarea1prgid;
     private int aarea1teamprgid;
     private int aarea2;
-    private int aarea2id;
+    private String aarea2id;
     private int aarea2prgid;
     private int aarea2teamprgid;
     private int aarea3;
-    private int aarea3id;
+    private String aarea3id;
     private int aarea3prgid;
     private int aarea3teamprgid;
     private int aarea4;
-    private int aarea4id;
+    private String aarea4id;
     private int aarea4prgid;
     private int aarea4teamprgid;
     private int aarea5;
-    private int aarea5id;
+    private String aarea5id;
     private int aarea5prgid;
     private int aarea5teamprgid;
     private int aarea6;
-    private int aarea6id;
+    private String aarea6id;
     private int aarea6prgid;
     private int aarea6teamprgid;
     private int skscore;
@@ -95,19 +97,19 @@ public class ConverterModel {
     private int aptsdiff;
     private int strrot;
     private int hset;
-    private int hsetid;
+    private String hsetid;
     private int hsetprgid;
     private int hsetteamprgid;
     private int aset;
-    private int asetid;
+    private String asetid;
     private int asetprgid;
     private int asetteamprgid;
     private int pos;
-    private int row;
-    private int hlineup;
-    private int alineup;
-    private int h_Lineup_libero;
-    private int a_Lineup_libero;
+    private String row;
+    private String hlineup;
+    private String alineup;
+    private String h_Lineup_libero;
+    private String a_Lineup_libero;
     private int hLibero;
     private int aLibero;
     private int lineup_Team_Prg_ID;
@@ -117,6 +119,127 @@ public class ConverterModel {
     private int Prg_Rally_Match_ID;
     private int Prg_Rally_Data_ID;
     private int Play_In_Rally;
+
+    public Touch(int yearid, int	matchid, int team, int teamid, int prgteamid, int ply, String plyid, int plyprgid, int	plyteamprgid, int sk, int skty, int	skgrd, int sk_grd, int combo, int	tgt, int strzn, int	endzn, int endzn2, int tysk, int plys, int special, int	custom, int	so_ps, int rec_def, int	undefined1, int	x1, int	y1, int x2, int y2, int x3, int y3, String hh_mm_ss, int game, int hrot,	int arot, int movie, int sec, int undefined2, int harea1, String harea1id, int harea1prgid, int	harea1teamprgid, int harea2, String harea2id, int	harea2prgid, int harea2teamprgid, int harea3, String harea3id, int harea3prgid, int harea3teamprgid, int harea4, String harea4id, int harea4prgid, int	harea4teamprgid, int harea5, String harea5id, int harea5prgid, int harea5teamprgid, int harea6, String harea6id, int harea6prgid, int	harea6teamprgid, int aarea1, String aarea1id, int	aarea1prgid, int aarea1teamprgid, int aarea2, String aarea2id, int	aarea2prgid, int aarea2teamprgid, int aarea3, String aarea3id, int aarea3prgid, int aarea3teamprgid, int aarea4, String aarea4id, int aarea4prgid, int aarea4teamprgid, int aarea5, String aarea5id, int aarea5prgid, int aarea5teamprgid, int aarea6, String aarea6id, int aarea6prgid, int aarea6teamprgid, int skscore, int hpts, int apts, int ptsdiff, int hptsdiff, int aptsdiff, int strrot,	 int hset, String hsetid, int hsetprgid, int hsetteamprgid, int aset, String asetid, int asetprgid, int asetteamprgid, int pos, String row, String hlineup, String alineup, String 	h_Lineup_libero, String a_Lineup_libero, int hLibero, int aLibero, int lineup_Team_Prg_ID, int lineup_Prg_ID, int wonlost, int Prg_Rally_Set_ID, int Prg_Rally_Match_ID,	int Prg_Rally_Data_ID, int Play_In_Rally) {
+
+        super();
+        this.yearid = yearid;
+        this.matchid = matchid;
+        this.team = team;
+        this.teamid = teamid;
+        this.prgteamid = prgteamid;
+        this.ply = ply;
+        this.plyid = plyid;
+        this.plyprgid = plyprgid;
+        this.plyteamprgid = plyteamprgid;
+        this.sk = sk;
+        this.skty = skty;
+        this.skgrd = skgrd;
+        this.sk_grd = sk_grd;
+        this.combo = combo;
+        this.tgt = tgt;
+        this.strzn = strzn;
+        this.endzn = endzn;
+        this.endzn2 = endzn2;
+        this.tysk = tysk;
+        this.plys = plys;
+        this.special = special;
+        this.custom = custom;
+        this.so_ps = so_ps;
+        this.rec_def = rec_def;
+        this.undefined1 = undefined1;
+        this.x1 = x1;
+        this.y1 = y1;
+        this.x2 = x2;
+        this.y2 = y2;
+        this.x3 = x3;
+        this.y3 = y3;
+        this.hh_mm_ss = hh_mm_ss;
+        this.game = game;
+        this. hrot = hrot;
+        this.arot = arot;
+        this.movie = movie;
+        this.sec = sec;
+        this.undefined2 = undefined2;
+        this.harea1 = harea1;
+        this.harea1id = harea1id;
+        this.harea1prgid = harea1prgid;
+        this.harea1teamprgid = harea1teamprgid;
+        this.harea2 = harea2;
+        this.harea2id = harea2id;
+        this.harea2prgid = harea2prgid;
+        this.harea2teamprgid = harea2teamprgid;
+        this.harea3 = harea3;
+        this.harea3id = harea3id;
+        this.harea3prgid = harea3prgid;
+        this.harea3teamprgid = harea3teamprgid;
+        this.harea4 = harea4;
+        this.harea4id = harea4id;
+        this.harea4prgid =harea4prgid;
+        this.harea4teamprgid = harea4teamprgid;
+        this.harea5 = harea5;
+        this.harea5id = harea5id;
+        this.harea5prgid = harea5prgid;
+        this.harea5teamprgid = harea5teamprgid;
+        this.harea6 = harea6;
+        this.harea6id = harea6id;
+        this.harea6prgid = harea6prgid;
+        this.harea6teamprgid = harea6teamprgid;
+        this.aarea1 = aarea1;
+        this.aarea1id = aarea1id;
+        this.aarea1prgid = aarea1prgid;
+        this.aarea1teamprgid = aarea1teamprgid;
+        this.aarea2 = aarea2;
+        this.aarea2id = aarea2id;
+        this.aarea2prgid = aarea2prgid;
+        this.aarea2teamprgid = aarea2teamprgid;
+        this.aarea3 = aarea3;
+        this.aarea3id = aarea3id;
+        this.aarea3prgid = aarea3prgid;
+        this.aarea3teamprgid = aarea3teamprgid;
+        this.aarea4 = aarea4;
+        this.aarea4id = aarea4id;
+        this.aarea4prgid = aarea4prgid;
+        this.aarea4teamprgid = aarea4teamprgid;
+        this.aarea5 = aarea5;
+        this.aarea5id = aarea5id;
+        this.aarea5prgid = aarea5prgid;
+        this.aarea5teamprgid = aarea5teamprgid;
+        this.aarea6 = aarea6;
+        this.aarea6id = aarea6id;
+        this.aarea6prgid = aarea6prgid;
+        this.aarea6teamprgid = aarea6teamprgid;
+        this.skscore = skscore;
+        this.hpts = hpts;
+        this.apts = apts;
+        this.ptsdiff = ptsdiff;
+        this.hptsdiff = hptsdiff;
+        this.aptsdiff = aptsdiff;
+        this.strrot = strrot;
+        this.hset = hset;
+        this.hsetid = hsetid;
+        this.hsetprgid = hsetprgid;
+        this.hsetteamprgid = hsetteamprgid;
+        this.aset = aset;
+        this.asetid = asetid;
+        this.asetprgid = asetprgid;
+        this.asetteamprgid = asetteamprgid;
+        this.pos = pos;
+        this.row = row;
+        this.hlineup = hlineup;
+        this.alineup = alineup;
+        this.h_Lineup_libero = h_Lineup_libero;
+        this.a_Lineup_libero = a_Lineup_libero;
+        this.hLibero = hLibero;
+        this.aLibero = aLibero;
+        this.lineup_Team_Prg_ID = lineup_Team_Prg_ID;
+        this.lineup_Prg_ID = lineup_Prg_ID;
+        this.wonlost = wonlost;
+        this.Prg_Rally_Set_ID = Prg_Rally_Set_ID;
+        this.Prg_Rally_Match_ID = Prg_Rally_Match_ID;
+        this.Prg_Rally_Data_ID = Prg_Rally_Data_ID;
+        this.Play_In_Rally = Play_In_Rally;
+    }
 
     public int getYearid() {
         return yearid;
@@ -166,11 +289,11 @@ public class ConverterModel {
         this.ply = ply;
     }
 
-    public int getPlyid() {
+    public String getPlyid() {
         return plyid;
     }
 
-    public void setPlyid(int plyid) {
+    public void setPlyid(String plyid) {
         this.plyid = plyid;
     }
 
@@ -366,11 +489,11 @@ public class ConverterModel {
         this.y3 = y3;
     }
 
-    public int getHh_mm_ss() {
+    public String getHh_mm_ss() {
         return hh_mm_ss;
     }
 
-    public void setHh_mm_ss(int hh_mm_ss) {
+    public void setHh_mm_ss(String hh_mm_ss) {
         this.hh_mm_ss = hh_mm_ss;
     }
 
@@ -430,11 +553,11 @@ public class ConverterModel {
         this.harea1 = harea1;
     }
 
-    public int getHarea1id() {
+    public String getHarea1id() {
         return harea1id;
     }
 
-    public void setHarea1id(int harea1id) {
+    public void setHarea1id(String harea1id) {
         this.harea1id = harea1id;
     }
 
@@ -462,11 +585,11 @@ public class ConverterModel {
         this.harea2 = harea2;
     }
 
-    public int getHarea2id() {
+    public String getHarea2id() {
         return harea2id;
     }
 
-    public void setHarea2id(int harea2id) {
+    public void setHarea2id(String harea2id) {
         this.harea2id = harea2id;
     }
 
@@ -494,11 +617,11 @@ public class ConverterModel {
         this.harea3 = harea3;
     }
 
-    public int getHarea3id() {
+    public String getHarea3id() {
         return harea3id;
     }
 
-    public void setHarea3id(int harea3id) {
+    public void setHarea3id(String harea3id) {
         this.harea3id = harea3id;
     }
 
@@ -526,11 +649,11 @@ public class ConverterModel {
         this.harea4 = harea4;
     }
 
-    public int getHarea4id() {
+    public String getHarea4id() {
         return harea4id;
     }
 
-    public void setHarea4id(int harea4id) {
+    public void setHarea4id(String harea4id) {
         this.harea4id = harea4id;
     }
 
@@ -558,11 +681,11 @@ public class ConverterModel {
         this.harea5 = harea5;
     }
 
-    public int getHarea5id() {
+    public String getHarea5id() {
         return harea5id;
     }
 
-    public void setHarea5id(int harea5id) {
+    public void setHarea5id(String harea5id) {
         this.harea5id = harea5id;
     }
 
@@ -590,11 +713,11 @@ public class ConverterModel {
         this.harea6 = harea6;
     }
 
-    public int getHarea6id() {
+    public String getHarea6id() {
         return harea6id;
     }
 
-    public void setHarea6id(int harea6id) {
+    public void setHarea6id(String harea6id) {
         this.harea6id = harea6id;
     }
 
@@ -622,11 +745,11 @@ public class ConverterModel {
         this.aarea1 = aarea1;
     }
 
-    public int getAarea1id() {
+    public String getAarea1id() {
         return aarea1id;
     }
 
-    public void setAarea1id(int aarea1id) {
+    public void setAarea1id(String aarea1id) {
         this.aarea1id = aarea1id;
     }
 
@@ -654,11 +777,11 @@ public class ConverterModel {
         this.aarea2 = aarea2;
     }
 
-    public int getAarea2id() {
+    public String getAarea2id() {
         return aarea2id;
     }
 
-    public void setAarea2id(int aarea2id) {
+    public void setAarea2id(String aarea2id) {
         this.aarea2id = aarea2id;
     }
 
@@ -686,11 +809,11 @@ public class ConverterModel {
         this.aarea3 = aarea3;
     }
 
-    public int getAarea3id() {
+    public String getAarea3id() {
         return aarea3id;
     }
 
-    public void setAarea3id(int aarea3id) {
+    public void setAarea3id(String aarea3id) {
         this.aarea3id = aarea3id;
     }
 
@@ -718,11 +841,11 @@ public class ConverterModel {
         this.aarea4 = aarea4;
     }
 
-    public int getAarea4id() {
+    public String getAarea4id() {
         return aarea4id;
     }
 
-    public void setAarea4id(int aarea4id) {
+    public void setAarea4id(String aarea4id) {
         this.aarea4id = aarea4id;
     }
 
@@ -750,11 +873,11 @@ public class ConverterModel {
         this.aarea5 = aarea5;
     }
 
-    public int getAarea5id() {
+    public String getAarea5id() {
         return aarea5id;
     }
 
-    public void setAarea5id(int aarea5id) {
+    public void setAarea5id(String aarea5id) {
         this.aarea5id = aarea5id;
     }
 
@@ -782,11 +905,11 @@ public class ConverterModel {
         this.aarea6 = aarea6;
     }
 
-    public int getAarea6id() {
+    public String getAarea6id() {
         return aarea6id;
     }
 
-    public void setAarea6id(int aarea6id) {
+    public void setAarea6id(String aarea6id) {
         this.aarea6id = aarea6id;
     }
 
@@ -870,11 +993,11 @@ public class ConverterModel {
         this.hset = hset;
     }
 
-    public int getHsetid() {
+    public String getHsetid() {
         return hsetid;
     }
 
-    public void setHsetid(int hsetid) {
+    public void setHsetid(String hsetid) {
         this.hsetid = hsetid;
     }
 
@@ -902,11 +1025,11 @@ public class ConverterModel {
         this.aset = aset;
     }
 
-    public int getAsetid() {
+    public String getAsetid() {
         return asetid;
     }
 
-    public void setAsetid(int asetid) {
+    public void setAsetid(String asetid) {
         this.asetid = asetid;
     }
 
@@ -934,43 +1057,43 @@ public class ConverterModel {
         this.pos = pos;
     }
 
-    public int getRow() {
+    public String getRow() {
         return row;
     }
 
-    public void setRow(int row) {
+    public void setRow(String row) {
         this.row = row;
     }
 
-    public int getHlineup() {
+    public String getHlineup() {
         return hlineup;
     }
 
-    public void setHlineup(int hlineup) {
+    public void setHlineup(String hlineup) {
         this.hlineup = hlineup;
     }
 
-    public int getAlineup() {
+    public String getAlineup() {
         return alineup;
     }
 
-    public void setAlineup(int alineup) {
+    public void setAlineup(String alineup) {
         this.alineup = alineup;
     }
 
-    public int getH_Lineup_libero() {
+    public String getH_Lineup_libero() {
         return h_Lineup_libero;
     }
 
-    public void setH_Lineup_libero(int h_Lineup_libero) {
+    public void setH_Lineup_libero(String h_Lineup_libero) {
         this.h_Lineup_libero = h_Lineup_libero;
     }
 
-    public int getA_Lineup_libero() {
+    public String getA_Lineup_libero() {
         return a_Lineup_libero;
     }
 
-    public void setA_Lineup_libero(int a_Lineup_libero) {
+    public void setA_Lineup_libero(String a_Lineup_libero) {
         this.a_Lineup_libero = a_Lineup_libero;
     }
 
@@ -1044,5 +1167,12 @@ public class ConverterModel {
 
     public void setPlay_In_Rally(int play_In_Rally) {
         Play_In_Rally = play_In_Rally;
+    }
+
+    @Override
+    public String toString() {
+        return "Touch [yearid=" + yearid + ", matchid=" + matchid
+                + ", team=" + team + ", teamid=" + teamid + ", prgteamid="
+                + prgteamid + ", ply=" + ply + ", plyid=" + plyid + ", plyprgid=" + plyprgid + ", plyteamprgid=" + plyteamprgid + ", sk=" + sk + ", skty=" + skty + ", skgrd=" + skgrd + ", sk_grd=" + sk_grd + ", combo=" + combo + ", tgt=" + tgt + ", strzn=" + strzn + ", endzn=" + endzn + ", endzn2=" + endzn2 + ", tysk=" + tysk + ", plys=" + plys + ", special=" + special + ", custom=" + custom + ", so_ps=" + so_ps + ", rec_def=" + rec_def + ", undefined1=" + undefined1 + ", x1=" + x1 + ", y1=" + y1 + ", x2=" + x2 + ", y2=" + y2 + ", x3=" + x3 + ", y3=" + y3 + ", hh_mm_ss=" + hh_mm_ss + ", game=" + game + ", hrot=" + hrot + ", arot=" + arot + ", movie=" + movie + ", sec=" + sec + ", undefined2=" + undefined2 + ", harea1=" + harea1 + ", harea1id=" + harea1id + ", harea1prgid=" + harea1prgid + ", harea1teamprgid=" + harea1teamprgid + ", harea2=" + harea2 + ", harea2id=" + harea2id + ", harea2prgid=" + harea2prgid + ", harea2teamprgid=" + harea2teamprgid + ", harea3=" + harea3 + ", harea3id=" + harea3id + ", harea3prgid=" + harea3prgid + ", harea3teamprgid=" + harea3teamprgid + ", harea4=" + harea4 + ", harea4id=" + harea4id + ", harea4prgid=" + harea4prgid + ", harea4teamprgid=" + harea4teamprgid + ", harea5=" + harea5 + ", harea5id=" + harea5id + ", harea5prgid=" + harea5prgid + ", harea5teamprgid=" + harea5teamprgid + ", harea6=" + harea6 + ", harea6id=" + harea6id + ", harea6prgid=" + harea6prgid + ", harea6teamprgid=" + harea6teamprgid + ", aarea1=" + aarea1 + ", aarea1id=" + aarea1id + ", aarea1prgid=" + aarea1prgid + ", aarea1teamprgid=" + aarea1teamprgid + ", aarea2=" + aarea2 + ", aarea2id=" + aarea2id + ", aarea2prgid=" + aarea2prgid + ", aarea2teamprgid=" + aarea2teamprgid + ", aarea3=" + aarea3 + ", aarea3id=" + aarea3id + ", aarea3prgid=" + aarea3prgid + ", aarea3teamprgid=" + aarea3teamprgid + ", aarea4=" + aarea4 + ", aarea4id=" + aarea4id + ", aarea4prgid=" + aarea4prgid + ", aarea4teamprgid=" + aarea4teamprgid + ", aarea5=" + aarea5 + ", aarea5id=" + aarea5id + ", aarea5prgid=" + aarea5prgid + ", aarea5teamprgid=" + aarea5teamprgid + ", aarea6=" + aarea6 + ", aarea6id=" + aarea6id + ", aarea6prgid=" + aarea6prgid + ", aarea6teamprgid=" + aarea6teamprgid + ", skscore=" + skscore + ", hpts=" + hpts + ", apts=" + apts + ", ptsdiff=" + ptsdiff + ", hptsdiff=" + hptsdiff + ", aptsdiff=" + aptsdiff + ", strrot=" + strrot + ", hset=" + hset + ", hsetid=" + hsetid + ", hsetprgid=" + hsetprgid + ", hsetteamprgid=" + hsetteamprgid + ", aset=" + aset + ", asetid=" + asetid + ", asetprgid=" + asetprgid + ", asetteamprgid=" + asetteamprgid + ", pos=" + pos + ", row=" + row + ", hlineup=" + hlineup + ", alineup=" + alineup + ", h_Lineup_libero=" + h_Lineup_libero + ", a_Lineup_libero=" + a_Lineup_libero + ", hLibero=" + hLibero + ", aLibero=" + aLibero + ", lineup_Team_Prg_ID=" + lineup_Team_Prg_ID + ", lineup_Prg_ID=" + lineup_Prg_ID + ", wonlost=" + wonlost + ", Prg_Rally_Set_ID=" + Prg_Rally_Set_ID + ", Prg_Rally_Match_ID=" + Prg_Rally_Match_ID + ", Prg_Rally_Data_ID=" + Prg_Rally_Data_ID + ", Play_In_Rally=" + Play_In_Rally + "]";
     }
 }
